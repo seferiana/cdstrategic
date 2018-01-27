@@ -1,0 +1,379 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Raleway;
+	color: rgb(36,56,157);
+}
+
+@media (max-width: 600px) {
+	.grid {
+		width: 100%;
+	}
+}
+.grid {
+	display: grid;
+	object-fit: cover;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: ;
+	grid-template-areas: 
+	
+	
+	"logo logo" 
+	"aboutpar aboutpar"
+	"slogan slogan"
+	"nav nav"
+	"about about"
+	"michaelphoto michaelphoto"
+	"michaelbio michaelbio"
+	"seferianaphoto seferianaphoto"
+	"seferianabio seferianabio"
+	"services services"
+	"ballot ballot"
+	"bullhorn bullhorn"
+	"ygb ygb"
+	"campaigns campaigns"
+	"advocacy advocacy" 
+	"outreach outreach"
+	"contact contact"
+	"footer footer"
+	
+
+}
+
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul {
+	list-style-type: none;
+	position: relative;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+
+}
+
+li {
+	display: inline-block;
+	padding: 15px;
+	text-align: center;
+	
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:active, a:hover {
+  outline: 1px solid;
+  text-decoration: none;
+  font-weight: 700;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+
+}
+
+h1 {
+	color: rgb(36,56,157);
+	font-family: Fascinate;
+	font-size: 3em;
+}
+
+
+
+h4 {
+	text-align: center;
+	padding-top: 2.5%;
+	padding-bottom: 5%;
+	line-height: 1.5;
+}
+
+hr {
+  border: 0;
+  border-top: 3px double rgb(249,156,59);
+  margin: 0px;
+}
+
+.logo { 
+	grid-area: logo;
+	grid-column: 1/4;
+	grid-row: 1;
+	padding-top: 2%;
+	padding-bottom: 2.5%;
+	justify-content: center;
+	
+}
+
+
+.aboutpar {
+	grid-area: aboutpar;
+	grid-column: 1/4;
+	grid-row: 2;
+	background-image: url('https://lh3.googleusercontent.com/1wQEmvWdFxyBDIpbQAOWI-5pszbZXBy4OB8OgJWGHh8Ms9DI-ZNxtkgbR3eIIpZB2zNICTgIxNCwd3_5vHnxDFpRBMYcb5dOx6-ip-s13tjTz1vuSto8Nl-sdjXNWDCN7X_IDKuqLGu-zIt4jzaVgPErvzqiErx89KuhOyG4JU1HlHFwCrfgcSxcM39sAjZTrPcBNnwW17rrPQQswmHKhWLuYSxzMrCdbpsF94tX_ngSl8DuSCjmQy3tMyl8pgkN9UElSrNuiDugNImRbBCFwhM9adL473R-gGpMEiuzpRILAUvIgtEaI-rur_ss9ulk-yuAIwpEHvpHry07yPMVyXsqT6dQKTwh3jiv8euj-RIuwOiKR6IIeJ-AVCHJr6atF7s7ZN_7Cm3IhyW7haV_xeKbmKZj9vOCzTGfT_SZxSVFpBYPRup3dC4KzRjeICH_TCz_7f_wPr0Ept3ooYimCoWLDXI8i_hFdOYUlzwtnYA6hVl3zYWQXRzN4kuCcQo0cU1fEVQudHSCNUQpVbnNmtG5xaZ2Pg0YGoaq-9rYGViIfr_qSHkXv3aJL2jkXl9OCjxR5ym-W2WskT70mngDO69W1_mKWeGWB2f9WXk=w1227-h565-no');
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	height: 350px;
+  	z-index: -1;
+
+ }
+
+
+
+.slogan {
+	grid-area: slogan;
+	grid-column: 1/4;
+	grid-row: 3;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.nav { 
+	grid-area: nav;
+	grid-column: 1/4;
+	grid-row: 4;
+	background-color: rgb(36,56,157);
+	padding-left: 10%;
+	padding-right: 10%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	text-align: center;
+
+	
+}
+
+
+.aboutus {
+	grid-area: about;
+	grid-column: 1/4;
+	grid-row: 8;
+	text-align: left;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 8%;
+	padding-bottom: 2.5%;
+	background-color: white;
+	
+
+}
+
+
+
+.michaelphoto { 
+	grid-area: michaelphoto;
+	grid-column-: 1;
+	grid-row: 9;
+	justify-content: center;
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-bottom: 10%;
+	padding-top: 10%;
+	
+	
+
+}
+
+.michaelbio {
+	grid-area: michaelbio;
+	grid-column: 2/4;
+	grid-row: 9;
+	padding-left: 5%;
+	padding-right: 10%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	
+	
+}
+
+.seferianaphoto { 
+	grid-area: seferianaphoto;
+	grid-column: 1;
+	grid-row: 10;
+	justify-content: center;
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-bottom: 10%;
+	padding-top: 10%;
+	
+}
+
+.seferianabio {
+	grid-area: seferianabio;
+	grid-column: 2/4;
+	grid-row: 10;
+	padding-left: 5%;
+	padding-right: 10%;
+	padding-top: 5%;
+	padding-bottom: 15%;
+
+}
+
+.services {
+	grid-area: services;
+	grid-column: 1/4;
+	grid-row: 5;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 7%;
+	padding-bottom: 2.5%;
+	background-color: white;
+}
+
+.ballot { 
+	grid-area: ballot;
+	grid-column-start: 1;
+	grid-row: 6;
+	padding-left: 5%;
+	padding-right: 10%;
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+
+.bullhorn { 
+	grid-area: bullhorn;
+	grid-column: 2;
+	grid-row: 6;
+	padding-left: 5%;
+	padding-right: 10%;
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+
+.ygb {
+	grid-area: ygb;
+	grid-column: 3;
+	grid-row: 6;
+	padding-left: 5%;
+	padding-right: 10%;
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+
+.campaigns { 
+	grid-area: campaigns;
+	grid-column-start: 1;
+	grid-row: 7;
+	padding-left: 5%;
+	padding-right: 10%;
+	padding-top: 5%;
+	padding-bottom: 10%;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.advocacy { 
+	grid-area: advocacy;
+	grid-column: 2;
+	grid-row: 7;
+	padding-left: 5%;
+	padding-right: 10%;
+	padding-top: 5%;
+	padding-bottom: 10%;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.outreach {
+	grid-area: outreach;
+	grid-column: 3;
+	grid-row: 7;
+	padding-left: 5%;
+	padding-right: 10%;
+	padding-top: 5%;
+	padding-bottom: 10%;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.contact {
+	grid-area: contact;
+	grid-column: 1/4;
+	grid-row: 11;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	justify-content: center;
+	background-color: white;
+}
+
+
+
+.footer {
+	grid-area: footer;
+	grid-column: 1/4
+	grid-row: 12;
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	background-color: rgb(36,56,157);
+	color: white;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+}
+
+/*
+.grid div:nth-child(even) {
+	background-color: deeppink;
+}
+
+.grid div:nth-child(odd) {
+	background-color: lightblue;
+}
+
+*/
+
+/*@media screen and (min-width: 736px) {*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+	
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	
+
+	"logo logo logo"
+	"aboutpar aboutpar aboutpar"
+	"slogan slogan slogan"
+	"nav nav nav"
+	"about about about"
+	"services services services"
+	"michaelphoto michaelbio michaelbio"
+	"seferianaphoto seferianabio seferianabio"
+	"ballot bullhorn ygb"
+	"campaigns advocacy outreach"
+	"contact contact contact"
+	"footer footer footer"
+
+	}
