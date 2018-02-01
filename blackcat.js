@@ -33,3 +33,12 @@
       });
     } // End if
   });
+   const scriptURL = 'https://script.google.com/macros/u/1/s/AKfycbwc8QopWRBTKmG9jS5ztT7rh_cSiU9UAsTUM7R5ZtThq_LWz_rp/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
