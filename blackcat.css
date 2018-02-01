@@ -13,30 +13,25 @@
 .grid {
 	display: grid;
 	object-fit: cover;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: ;
 	grid-template-areas: 
-	
-	
-	"logo logo" 
-	"aboutpar aboutpar"
-	"slogan slogan"
-	"nav nav"
-	"about about"
-	"michaelphoto michaelphoto"
-	"michaelbio michaelbio"
-	"seferianaphoto seferianaphoto"
-	"seferianabio seferianabio"
-	"services services"
-	"ballot ballot"
-	"bullhorn bullhorn"
-	"ygb ygb"
-	"campaigns campaigns"
-	"advocacy advocacy" 
-	"outreach outreach"
-	"contact contact"
-	"footer footer"
-	
+	"logo" 
+	"aboutpar"
+	"slogan"
+	"nav"
+	"about"
+	"michaelphoto"
+	"michaelbio"
+	"seferianaphoto"
+	"seferianabio"
+	"services"
+	"ballot"
+	"bullhorn"
+	"ygb"
+	"campaigns"
+	"advocacy" 
+	"outreach"
+	"contact"
+	"footer"
 
 }
 
@@ -86,7 +81,7 @@ a:active, a:hover {
 
 h1 {
 	color: rgb(36,56,157);
-	font-family: Fascinate;
+	font-family: Raleway;
 	font-size: 3em;
 }
 
@@ -120,7 +115,7 @@ hr {
 	grid-area: aboutpar;
 	grid-column: 1/4;
 	grid-row: 2;
-	background-image: url('seattleskyline.png');
+	background-image: url('https://lh3.googleusercontent.com/1wQEmvWdFxyBDIpbQAOWI-5pszbZXBy4OB8OgJWGHh8Ms9DI-ZNxtkgbR3eIIpZB2zNICTgIxNCwd3_5vHnxDFpRBMYcb5dOx6-ip-s13tjTz1vuSto8Nl-sdjXNWDCN7X_IDKuqLGu-zIt4jzaVgPErvzqiErx89KuhOyG4JU1HlHFwCrfgcSxcM39sAjZTrPcBNnwW17rrPQQswmHKhWLuYSxzMrCdbpsF94tX_ngSl8DuSCjmQy3tMyl8pgkN9UElSrNuiDugNImRbBCFwhM9adL473R-gGpMEiuzpRILAUvIgtEaI-rur_ss9ulk-yuAIwpEHvpHry07yPMVyXsqT6dQKTwh3jiv8euj-RIuwOiKR6IIeJ-AVCHJr6atF7s7ZN_7Cm3IhyW7haV_xeKbmKZj9vOCzTGfT_SZxSVFpBYPRup3dC4KzRjeICH_TCz_7f_wPr0Ept3ooYimCoWLDXI8i_hFdOYUlzwtnYA6hVl3zYWQXRzN4kuCcQo0cU1fEVQudHSCNUQpVbnNmtG5xaZ2Pg0YGoaq-9rYGViIfr_qSHkXv3aJL2jkXl9OCjxR5ym-W2WskT70mngDO69W1_mKWeGWB2f9WXk=w1227-h565-no');
   	background-repeat: no-repeat;
   	background-attachment: fixed;
   	background-size: cover;
@@ -165,6 +160,7 @@ hr {
 	padding-top: 8%;
 	padding-bottom: 2.5%;
 	background-color: white;
+	text-align: center;
 	
 
 }
@@ -229,6 +225,7 @@ hr {
 	padding-top: 7%;
 	padding-bottom: 2.5%;
 	background-color: white;
+	text-align: center;
 }
 
 .ballot { 
@@ -299,7 +296,7 @@ hr {
 
 .contact {
 	grid-area: contact;
-	grid-column: 1/4;
+	grid-column: 2/3;
 	grid-row: 11;
 	padding-left: 10%;
 	padding-right: 10%;
@@ -307,9 +304,25 @@ hr {
 	padding-bottom: 2.5%;
 	justify-content: center;
 	background-color: white;
+	text-align: center;
+	height: 400px;
 }
 
+#contactbox {
+	border: 2px solid rgb(36,56,157);
+	border-radius: 25px;
+	width: 400px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
 
+}
+
+.send {
+	background: none;
+	border: none;
+}
 
 .footer {
 	grid-area: footer;
@@ -338,9 +351,9 @@ hr {
 
 */
 
-/*@media screen and (min-width: 736px) {*/
+@media screen and (min-width: 736px) {
 
-
+/*
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
@@ -354,7 +367,7 @@ hr {
 @media (min-width: 1000px) {}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {} 
 	
 
 .grid {
@@ -362,7 +375,6 @@ hr {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas:
 	
-
 	"logo logo logo"
 	"aboutpar aboutpar aboutpar"
 	"slogan slogan slogan"
